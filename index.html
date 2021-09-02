@@ -41,6 +41,14 @@
   <script type="text/html">
     <p><%- sheet_name.length %> rows in the worksheet</p>
   </script>
+  
+  <script type="text/html" class="menu">
+  <ul>
+    <% for (var i = 0; i < Data.length; i++) { %>
+      <li><%- Data[i].First_Name %> (contains <% print(Data[i].Last_Name.replace(/\n/g, ", ")) %>)</li>
+    <% } %>
+  </ul>
+  </script>
 
   <div id="footer">
     <p>
