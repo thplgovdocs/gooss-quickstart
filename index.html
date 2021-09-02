@@ -20,7 +20,7 @@
     // if you wish to target lower IE versions.
     document.addEventListener("DOMContentLoaded", function() {
       // TODO: Change "sheet_name" to the name you want to use
-      gooss.data({ sheet_name: {url: url, index: 0} }, function(err, data) {
+      gooss.data({ Data: {url: url, index: 0} }, function(err, data) {
         if (err) {
           document.getElementById("loading").innerHTML = "Error: " + err;
           return;
